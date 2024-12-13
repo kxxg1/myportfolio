@@ -1,0 +1,244 @@
+/* Existing CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.ddec-project {
+  display: block;
+  margin-bottom: 2rem;
+  margin-left: 70px;
+  margin-right: 120px;
+  font-weight: 300;
+}
+
+.ddec_project__container__header h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.ddec-project h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ddec-project p {
+  line-height: 1.8;
+  letter-spacing: 0.16px;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: clamp(65ch, 50%, 95ch);
+}
+
+.ddec-project ul {
+  list-style-type: disc;
+  letter-spacing: 0.16px;
+  font-size: 1rem;
+  margin: 2rem;
+}
+
+.ddec-project ul li {
+  margin: 1rem;
+}
+
+/*Grid Layout Styling*/
+
+.ddec_project__grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto repeat(3, 1fr);
+  gap: 40px 40px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "ddec_grid__item__1 ddec_grid__item__2"
+    "ddec_grid__item__3 ddec_grid__item__4"
+    "ddec_grid__item__5 ddec_grid__item__6"
+    "ddec_grid__item__7 ddec_grid__item__8";
+  margin-left: 100px;
+  margin-right: 200px;
+  margin-top: 1rem;
+  margin-bottom:0;
+}
+
+/*About section Styling*/
+
+.ddec_grid__item__1 {
+  grid-area: ddec_grid__item__1;
+  width: 460px;
+  height: 380px;
+  padding: 1rem;
+}
+
+.ddec_grid__item__2 {
+  grid-area: ddec_grid__item__2;
+  width: 460px;
+  height: 380px;
+  padding: 1rem;
+}
+
+/*Membership Section Styling*/
+
+.ddec_grid__item__3 {
+  grid-area: ddec_grid__item__3;
+  width: 460px;
+  height: 380px;
+  padding: 1rem;
+}
+
+.ddec_grid__item__4 {
+  grid-area: ddec_grid__item__4;
+  width: 460px;
+  height: 380px;
+  padding: 1rem;
+}
+
+/*Blog Page Styling*/
+
+.ddec_grid__item__5 {
+  grid-area: ddec_grid__item__5;
+  width: 460px;
+  height: 380px;
+  padding: 1rem;
+}
+
+.ddec_grid__item__6 {
+  grid-area: ddec_grid__item__6;
+  width: 460px;
+  height: 380px;
+  padding: 1rem;
+}
+
+/*Footer Section Styling*/
+
+.ddec_grid__item__7 {
+  grid-area: ddec_grid__item__7;
+  width: 460px;
+  height: 230px;
+  padding: 1rem;
+}
+
+.ddec_grid__item__8 {
+  grid-area: ddec_grid__item__8;
+  width: 460px;
+  height: 280px;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.ddec_grid__item__1 img {
+  width: 460px;
+  height: 380px;
+}
+
+.ddec_grid__item__2 img {
+  width: 460px;
+  height: 380px;
+}
+
+.ddec_grid__item__3 img {
+  width: 460px;
+  height: 380px;
+}
+
+.ddec_grid__item__4 img {
+  width: 460px;
+  height: 380px;
+}
+
+.ddec_grid__item__5 img {
+  width: 460px;
+  height: 380px;
+}
+
+.ddec_grid__item__6 img {
+  width: 460px;
+  height: 380px;
+}
+
+.ddec_grid__item__7 img {
+  width: 460px;
+  height: 230px;
+}
+
+.ddec_grid__item__8 img {
+  width: 460px;
+  height: 330px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1180px) {
+  .ddec_project__grid__container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ddec_grid__item__1"
+      "ddec_grid__item__2"
+      "ddec_grid__item__3"
+      "ddec_grid__item__4"
+      "ddec_grid__item__5"
+      "ddec_grid__item__6"
+      "ddec_grid__item__7"
+      "ddec_grid__item__8";
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 20px;
+  }
+
+  .ddec_grid__item__1,
+  .ddec_grid__item__2,
+  .ddec_grid__item__3,
+  .ddec_grid__item__4,
+  .ddec_grid__item__5,
+  .ddec_grid__item__6,
+  .ddec_grid__item__7,
+  .ddec_grid__item__8 {
+    width: 100%;
+    height: auto;
+  }
+
+  .ddec_grid__item__1 img,
+  .ddec_grid__item__2 img,
+  .ddec_grid__item__3 img,
+  .ddec_grid__item__4 img,
+  .ddec_grid__item__5 img,
+  .ddec_grid__item__6 img,
+  .ddec_grid__item__7 img {
+    width: 460px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ddec_project__grid__container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .ddec_project__container__header h2 {
+    font-size: 1.8rem;
+  }
+
+  .ddec-project h3 {
+    font-size: 1.5rem;
+  }
+
+  .ddec-project p,
+  .ddec-project ul {
+    font-size: 1rem;
+  }
+}
